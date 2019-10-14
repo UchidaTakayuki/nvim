@@ -68,7 +68,7 @@ if dein#load_state('$HOME/.cache/dein')
   call dein#add('tpope/vim-commentary')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('nathanaelkane/vim-indent-guides')
+  call dein#add('Yggdroot/indentLine')
   call dein#add('ctrlpvim/ctrlp.vim')
   call dein#add('thaerkh/vim-workspace')
   call dein#add('Shougo/deoplete.nvim')
@@ -117,3 +117,6 @@ let g:ctrlp_map='<C-p>'
 let g:workspace_create_new_tabs = 1
 let g:workspace_session_directory = $HOME . '/.config/nvim/sessions/'
 cnoremap cw :ToggleWorkspace<CR>
+
+" pulugin setting : indentLine
+let g:indentLine_char = '┆'

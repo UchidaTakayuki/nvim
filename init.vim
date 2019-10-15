@@ -46,6 +46,12 @@ nnoremap <C-l> <C-w>l
 " setting : terminal
 tnoremap <Esc> <C-\><C-n>
 
+" setting : undo
+set undofile
+set undodir=$HOME/.config/nvim/undo
+set undolevels=1000
+set undoreload=10000
+
 " pulgin setting : dein
 if &compatible
     set nocompatible               " Be iMproved

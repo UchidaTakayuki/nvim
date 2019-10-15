@@ -48,7 +48,7 @@ tnoremap <Esc> <C-\><C-n>
 
 " pulgin setting : dein
 if &compatible
-  set nocompatible               " Be iMproved
+    set nocompatible               " Be iMproved
 endif
 
 " Required:
@@ -56,29 +56,30 @@ set runtimepath+=$HOME/.cache/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
 if dein#load_state('$HOME/.cache/dein')
-  call dein#begin('$HOME/.cache/dein')
+    call dein#begin('$HOME/.cache/dein')
 
-  " Let dein manage dein
-  " Required:
-  call dein#add('$HOME/.cache/dein/repos/github.com/Shougo/dein.vim')
+    " Let dein manage dein
+    " Required:
+    call dein#add('$HOME/.cache/dein/repos/github.com/Shougo/dein.vim')
 
-  " Add or remove your plugins here like this:
-  call dein#add('jacoborus/tender.vim')
-  call dein#add('tpope/vim-surround')
-  call dein#add('airblade/vim-gitgutter')
-  call dein#add('scrooloose/nerdtree')
-  call dein#add('ryanoasis/vim-devicons')
-  call dein#add('tpope/vim-commentary')
-  call dein#add('vim-airline/vim-airline')
-  call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('Yggdroot/indentLine')
-  call dein#add('ctrlpvim/ctrlp.vim')
-  call dein#add('thaerkh/vim-workspace')
-  call dein#add('Shougo/deoplete.nvim')
+    " Add or remove your plugins here like this:
+    call dein#add('jacoborus/tender.vim')
+    call dein#add('tomasr/molokai')
+    call dein#add('tpope/vim-surround')
+    call dein#add('airblade/vim-gitgutter')
+    call dein#add('scrooloose/nerdtree')
+    call dein#add('ryanoasis/vim-devicons')
+    call dein#add('tpope/vim-commentary')
+    call dein#add('vim-airline/vim-airline')
+    call dein#add('vim-airline/vim-airline-themes')
+    call dein#add('Yggdroot/indentLine')
+    call dein#add('ctrlpvim/ctrlp.vim')
+    call dein#add('thaerkh/vim-workspace')
+    call dein#add('Shougo/deoplete.nvim')
 
 " Required:
-  call dein#end()
-  call dein#save_state()
+    call dein#end()
+    call dein#save_state()
 endif
 
 " Required:
@@ -86,17 +87,18 @@ filetype plugin indent on
 
 " If you want to install not installed plugins on startup.
 if dein#check_install()
-  call dein#install()
+    call dein#install()
 endif
 
 " setting : syntax
 " Notice : please write after the dein
+let g:molokai_original = 1
 if (has("termguicolors"))
  set termguicolors
 endif
 syntax enable
 set background=dark
-colorscheme tender
+colorscheme molokai
 highlight LineNr ctermfg=239
 
 " plugin setting : airline

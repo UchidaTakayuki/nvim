@@ -64,6 +64,7 @@ if dein#load_state('$HOME/.cache/dein')
 
     " Add or remove your plugins here like this:
     call dein#add('jacoborus/tender.vim')
+    call dein#add('cocopon/iceberg.vim')
     call dein#add('tomasr/molokai')
     call dein#add('tpope/vim-surround')
     call dein#add('airblade/vim-gitgutter')
@@ -98,7 +99,7 @@ if (has("termguicolors"))
 endif
 syntax enable
 set background=dark
-colorscheme molokai
+colorscheme iceberg
 highlight LineNr ctermfg=239
 
 " plugin setting : airline

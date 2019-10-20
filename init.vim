@@ -86,6 +86,7 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('tpope/vim-commentary')
     call dein#add('Shougo/deoplete.nvim')
     call dein#add('tpope/vim-fugitive')
+    call dein#add('vimlab/split-term.vim')
 
 " Required:
     call dein#end()

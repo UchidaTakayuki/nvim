@@ -81,7 +81,10 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('Yggdroot/indentLine')
     call dein#add('ctrlpvim/ctrlp.vim')
     call dein#add('thaerkh/vim-workspace')
+    call dein#add('tpope/vim-repeat')
+    call dein#add('tpope/vim-commentary')
     call dein#add('Shougo/deoplete.nvim')
+    call dein#add('tpope/vim-fugitive')
 
 " Required:
     call dein#end()

@@ -130,7 +130,7 @@ let g:ctrlp_map='<C-p>'
 " pulugin setting : vim-workspace
 let g:workspace_create_new_tabs = 1
 let g:workspace_session_directory = $HOME . '/.config/nvim/sessions/'
-cnoremap cw :ToggleWorkspace<CR>
+cnoremap tcw :ToggleWorkspace<CR>
 
 " pulugin setting : indentLine
 let g:indentLine_char = '┆'

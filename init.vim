@@ -72,6 +72,7 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('jacoborus/tender.vim')
     call dein#add('cocopon/iceberg.vim')
     call dein#add('tomasr/molokai')
+    call dein#add('morhetz/gruvbox')
     call dein#add('tpope/vim-surround')
     call dein#add('airblade/vim-gitgutter')
     call dein#add('scrooloose/nerdtree')
@@ -107,7 +108,7 @@ if (has("termguicolors"))
 endif
 syntax enable
 set background=dark
-colorscheme iceberg
+colorscheme gruvbox
 highlight LineNr ctermfg=239
 
 " plugin setting : airline

@@ -11,6 +11,8 @@ set nobackup
 set confirm
 set hidden
 set autoread
+set modifiable
+set write
 
 " setting : character
 set encoding=utf-8
@@ -42,6 +44,15 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" setting : buffer
+nnoremap <silent>bp :bprevious<CR>
+nnoremap <silent>bn :bnext<CR>
+nnoremap <silent>bb :b#<CR>
+nnoremap <silent>bf :bf<CR>
+nnoremap <silent>bl :bl<CR>
+nnoremap <silent>bm :bm<CR>
+nnoremap <silent>bd :bdelete<CR>
 
 " setting : terminal
 tnoremap <Esc> <C-\><C-n>

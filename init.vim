@@ -131,6 +131,7 @@ let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 
 " pulugin setting : ctrlp
 let g:ctrlp_map='<C-p>'
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 
 " pulugin setting : vim-workspace
 let g:workspace_create_new_tabs = 1

@@ -102,6 +102,7 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('digitaltoad/vim-pug')
     call dein#add('dNitro/vim-pug-complete')
     call dein#add('scrooloose/syntastic')
+    call dein#add('vim-scripts/grep.vim')
 
 " Required:
     call dein#end()
@@ -124,7 +125,7 @@ if (has("termguicolors"))
 endif
 syntax enable
 set background=dark
-colorscheme Iceberg
+colorscheme gruvbox
 highlight LineNr ctermfg=239
 
 " plugin setting : airline

@@ -87,6 +87,9 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('Shougo/deoplete.nvim')
     call dein#add('tpope/vim-fugitive')
     call dein#add('vimlab/split-term.vim')
+    call dein#add('digitaltoad/vim-pug')
+    call dein#add('dNitro/vim-pug-complete')
+    call dein#add('scrooloose/syntastic')
 
 " Required:
     call dein#end()
@@ -109,7 +112,7 @@ if (has("termguicolors"))
 endif
 syntax enable
 set background=dark
-colorscheme gruvbox
+colorscheme Iceberg
 highlight LineNr ctermfg=239
 
 " plugin setting : airline
@@ -136,3 +139,13 @@ cnoremap tcw :ToggleWorkspace<CR>
 
 " pulugin setting : indentLine
 let g:indentLine_char = '┆'
+
+" pulugin setting : syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ["flake8"]

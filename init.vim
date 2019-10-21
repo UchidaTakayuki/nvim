@@ -126,11 +126,6 @@ map <C-b> :NERDTreeToggle<CR>
 " puligin setting : vim-devicons
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 
-" pulugin setting : vim-indent-guides
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size = 1
-let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
-
 " pulugin setting : ctrlp
 let g:ctrlp_map='<C-p>'
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'

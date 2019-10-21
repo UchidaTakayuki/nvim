@@ -46,13 +46,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " setting : buffer
-nnoremap <silent>bp :bprevious<CR>
-nnoremap <silent>bn :bnext<CR>
-nnoremap <silent>bb :b#<CR>
-nnoremap <silent>bf :bf<CR>
-nnoremap <silent>bl :bl<CR>
-nnoremap <silent>bm :bm<CR>
-nnoremap <silent>bd :bdelete<CR>
+nnoremap <A-p> :bprevious<CR>
+nnoremap <A-n> :bnext<CR>
+nnoremap <A-d> :bdelete<CR>
 
 " setting : terminal
 tnoremap <Esc> <C-\><C-n>

@@ -92,6 +92,7 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('dNitro/vim-pug-complete')
     call dein#add('scrooloose/syntastic')
     call dein#add('vim-scripts/grep.vim')
+    call dein#add('nathanaelkane/vim-indent-guides')
 
 " Required:
     call dein#end()
@@ -153,3 +154,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ["flake8"]
+
+" pulugin setting : vim-indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']

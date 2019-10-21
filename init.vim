@@ -81,6 +81,7 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('vim-airline/vim-airline-themes')
     call dein#add('Yggdroot/indentLine')
     call dein#add('ctrlpvim/ctrlp.vim')
+    call dein#add('rking/ag.vim')
     call dein#add('thaerkh/vim-workspace')
     call dein#add('tpope/vim-repeat')
     call dein#add('tpope/vim-commentary')
@@ -132,6 +133,12 @@ let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 " pulugin setting : ctrlp
 let g:ctrlp_map='<C-p>'
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+
+" pulugin setting : ag.vim
+if executable('ag')
+  let g:ctrlp_use_caching=0
+  let g:ctrlp_user_command='ag %s -i --nocolor --nogroup -g ""'
+endif
 
 " pulugin setting : vim-workspace
 let g:workspace_create_new_tabs = 1

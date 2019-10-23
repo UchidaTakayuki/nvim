@@ -133,6 +133,7 @@ let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 
 " pulugin setting : ctrlp
 let g:ctrlp_map='<C-p>'
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:30,results:30'
 
 " pulugin setting : ag.vim
 if executable('ag')

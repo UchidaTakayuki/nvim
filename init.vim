@@ -133,7 +133,6 @@ let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 
 " pulugin setting : ctrlp
 let g:ctrlp_map='<C-p>'
-let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 
 " pulugin setting : ag.vim
 if executable('ag')

@@ -120,7 +120,7 @@ if (has("termguicolors"))
 endif
 syntax enable
 set background=dark
-colorscheme plastic
+colorscheme gruvbox
 highlight LineNr ctermfg=239
 
 " plugin setting : airline

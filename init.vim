@@ -46,9 +46,10 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " setting : buffer
-nnoremap <C-Right> :bprev<CR>
-nnoremap <C-Left> :bnext<CR>
-nnoremap <C-Down> :bdelete<CR>
+let macvim_skip_cmd_opt_movement = 1
+nnoremap <M-Right> :bprev<CR>
+nnoremap <M-Left> :bnext<CR>
+nnoremap <M-Down> :bdelete<CR>
 
 " setting : terminal
 tnoremap <Esc> <C-\><C-n>

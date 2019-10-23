@@ -78,6 +78,7 @@ if dein#load_state('$HOME/.cache/dein')
 
     " Add or remove your plugins here like this:
     call dein#add('morhetz/gruvbox')
+    call dein#add('flrnprz/plastic.vim')
     call dein#add('tpope/vim-surround')
     call dein#add('airblade/vim-gitgutter')
     call dein#add('scrooloose/nerdtree')
@@ -119,7 +120,7 @@ if (has("termguicolors"))
 endif
 syntax enable
 set background=dark
-colorscheme gruvbox
+colorscheme plastic
 highlight LineNr ctermfg=239
 
 " plugin setting : airline

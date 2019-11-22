@@ -40,16 +40,16 @@ set shiftround
 set autoindent
 
 " setting : window mode
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <S-h> <C-w>h
+nnoremap <S-j> <C-w>j
+nnoremap <S-k> <C-w>k
+nnoremap <S-l> <C-w>l
 
 " setting : buffer
 let macvim_skip_cmd_opt_movement = 1
-nnoremap <M-Right> :bnext<CR>
-nnoremap <M-Left> :bprev<CR>
-nnoremap <M-Down> :bdelete<CR>
+nnoremap <C-l> :bnext<CR>
+nnoremap <C-h> :bprev<CR>
+nnoremap <C-d> :bdelete<CR>
 
 " setting : terminal
 tnoremap <Esc> <C-\><C-n>
@@ -78,6 +78,9 @@ if dein#load_state('$HOME/.cache/dein')
 
     " Add or remove your plugins here like this:
     call dein#add('morhetz/gruvbox')
+    call dein#add('arcticicestudio/nord-vim')
+    call dein#add('cocopon/iceberg.vim')
+    call dein#add('tomasiser/vim-code-dark')
     call dein#add('flrnprz/plastic.vim')
     call dein#add('tpope/vim-surround')
     call dein#add('airblade/vim-gitgutter')
@@ -98,8 +101,9 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('scrooloose/syntastic')
     call dein#add('vim-scripts/grep.vim')
     call dein#add('nathanaelkane/vim-indent-guides')
+    call dein#add('rhysd/accelerated-jk')
 
-" Required:
+    " Required:
     call dein#end()
     call dein#save_state()
 endif
@@ -120,7 +124,7 @@ if (has("termguicolors"))
 endif
 syntax enable
 set background=dark
-colorscheme gruvbox
+colorscheme codedark
 highlight LineNr ctermfg=239
 
 " plugin setting : airline
@@ -163,3 +167,7 @@ let g:syntastic_python_checkers = ["flake8"]
 " pulugin setting : vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+
+" pulugin setting : accelerated-jk
+nmap j <Plug>(accelerated_jk_gj)
+nmap k <Plug>(accelerated_jk_gk)

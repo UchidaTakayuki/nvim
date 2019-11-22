@@ -58,8 +58,8 @@ nnoremap <C-d> :bdelete<CR>
 tnoremap <Esc> <C-\><C-n>
 
 " setting : undo
-set undodir=~/.config/nvim/undo
 set undofile
+set undodir=~/.config/nvim/undo
 set undolevels=1000
 set undoreload=10000
 

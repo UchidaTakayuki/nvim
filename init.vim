@@ -18,7 +18,7 @@ set write
 set encoding=utf-8
 set fileencoding=utf-8
 set fenc=utf-8
-set clipboard+=unnamedplus
+set clipboard& clipboard^=unnamedplus
 set ambiwidth=double
 
 " setting : search

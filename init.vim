@@ -39,6 +39,9 @@ set smarttab
 set shiftround
 set autoindent
 
+" setting : mouse
+set mouse=a
+
 " setting : window mode
 nnoremap <S-h> <C-w>h
 nnoremap <S-j> <C-w>j

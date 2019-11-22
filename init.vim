@@ -43,16 +43,16 @@ set autoindent
 set mouse=a
 
 " setting : window mode
-nnoremap <S-h> <C-w>h
-nnoremap <S-j> <C-w>j
-nnoremap <S-k> <C-w>k
-nnoremap <S-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " setting : buffer
 let macvim_skip_cmd_opt_movement = 1
-nnoremap <C-l> :bnext<CR>
-nnoremap <C-h> :bprev<CR>
-nnoremap <C-d> :bdelete<CR>
+nnoremap <S-l> :bnext<CR>
+nnoremap <S-h> :bprev<CR>
+nnoremap <S-d> :bdelete<CR>
 
 " setting : terminal
 tnoremap <Esc> <C-\><C-n>

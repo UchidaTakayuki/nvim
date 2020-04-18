@@ -54,6 +54,9 @@ nnoremap <S-l> :bnext<CR>
 nnoremap <S-h> :bprev<CR>
 nnoremap <S-d> :bdelete<CR>
 
+" setting : spell check
+set spell spelllang=en
+
 " setting : terminal
 tnoremap <Esc> <C-\><C-n>
 
@@ -80,13 +83,14 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('$HOME/.cache/dein/repos/github.com/Shougo/dein.vim')
 
     " Add or remove your plugins here like this:
-    call dein#add('morhetz/gruvbox')
-    call dein#add('arcticicestudio/nord-vim')
+    " call dein#add('morhetz/gruvbox')
+    " call dein#add('arcticicestudio/nord-vim')
+    " call dein#add('tomasiser/vim-code-dark')
     call dein#add('cocopon/iceberg.vim')
-    call dein#add('tomasiser/vim-code-dark')
     call dein#add('flrnprz/plastic.vim')
     call dein#add('tpope/vim-surround')
     call dein#add('airblade/vim-gitgutter')
+    call dein#add('tpope/vim-fugitive')
     call dein#add('scrooloose/nerdtree')
     call dein#add('tpope/vim-commentary')
     call dein#add('vim-airline/vim-airline')
@@ -97,10 +101,8 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('tpope/vim-repeat')
     call dein#add('tpope/vim-commentary')
     call dein#add('Shougo/deoplete.nvim')
-    call dein#add('tpope/vim-fugitive')
     call dein#add('vimlab/split-term.vim')
     call dein#add('digitaltoad/vim-pug')
-    call dein#add('dNitro/vim-pug-complete')
     call dein#add('scrooloose/syntastic')
     call dein#add('vim-scripts/grep.vim')
     call dein#add('nathanaelkane/vim-indent-guides')
@@ -127,7 +129,7 @@ if (has("termguicolors"))
 endif
 syntax enable
 set background=dark
-colorscheme codedark
+colorscheme iceberg
 highlight LineNr ctermfg=239
 
 " plugin setting : airline

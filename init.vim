@@ -107,6 +107,8 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('vim-scripts/grep.vim')
     call dein#add('nathanaelkane/vim-indent-guides')
     call dein#add('rhysd/accelerated-jk')
+    call dein#add('simeji/winresizer')
+    call dein#add('alvan/vim-closetag')
 
     " Required:
     call dein#end()
@@ -176,3 +178,9 @@ let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 " pulugin setting : accelerated-jk
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
+
+" plugin setting : winresizer
+map <C-S-e> :WinResizerStartResize<CR>
+
+" plugin setting : vim-closetag
+let g:closetag_filenames = '*.html,*.vue'

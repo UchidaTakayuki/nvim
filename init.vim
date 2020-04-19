@@ -109,6 +109,10 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('rhysd/accelerated-jk')
     call dein#add('simeji/winresizer')
     call dein#add('alvan/vim-closetag')
+    call dein#add('prabirshrestha/async.vim')
+    call dein#add('prabirshrestha/asyncomplete.vim')
+    call dein#add('prabirshrestha/asyncomplete-lsp.vim')
+    call dein#add('prabirshrestha/vim-lsp')
 
     " Required:
     call dein#end()

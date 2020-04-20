@@ -143,6 +143,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 " plugin setting : NERDTree
 map <C-b> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
 
 " puligin setting : vim-devicons
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1

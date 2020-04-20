@@ -54,6 +54,10 @@ nnoremap <S-l> :bnext<CR>
 nnoremap <S-h> :bprev<CR>
 nnoremap <S-d> :bdelete<CR>
 
+" setting : complete
+inoremap <A-p> <C-p>
+inoremap <A-n> <C-n>
+
 " setting : spell check
 set spell spelllang=en
 

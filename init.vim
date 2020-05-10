@@ -87,10 +87,10 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('$HOME/.cache/dein/repos/github.com/Shougo/dein.vim')
 
     " Add or remove your plugins here like this:
-    " call dein#add('morhetz/gruvbox')
+    call dein#add('morhetz/gruvbox')
     " call dein#add('arcticicestudio/nord-vim')
     " call dein#add('tomasiser/vim-code-dark')
-    call dein#add('cocopon/iceberg.vim')
+    " call dein#add('cocopon/iceberg.vim')
     call dein#add('flrnprz/plastic.vim')
     call dein#add('tpope/vim-surround')
     call dein#add('airblade/vim-gitgutter')
@@ -139,7 +139,7 @@ if (has("termguicolors"))
 endif
 syntax enable
 set background=dark
-colorscheme iceberg
+colorscheme gruvbox
 highlight LineNr ctermfg=239
 
 " plugin setting : airline

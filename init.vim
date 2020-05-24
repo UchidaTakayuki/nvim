@@ -137,7 +137,7 @@ syntax on
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
 set background=dark
-colorscheme iceberg
+colorscheme gruvbox
 highlight LineNr ctermfg=239
 
 " plugin setting : airline

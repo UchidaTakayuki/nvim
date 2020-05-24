@@ -133,12 +133,9 @@ endif
 
 " setting : syntax
 " Notice : please write after the dein
-let g:molokai_original = 1
-if (has("termguicolors"))
- set termguicolors
-endif
-syntax enable
-
+syntax on
+autocmd ColorScheme * highlight Normal ctermbg=none
+autocmd ColorScheme * highlight LineNr ctermbg=none
 set background=dark
 colorscheme iceberg
 highlight LineNr ctermfg=239

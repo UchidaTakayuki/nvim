@@ -4,6 +4,7 @@ set cursorline
 set laststatus=2
 set cmdheight=1
 set showmatch
+set nowrap
 
 " setting : file 
 set noswapfile
@@ -134,8 +135,8 @@ endif
 " setting : syntax
 " Notice : please write after the dein
 syntax on
-autocmd ColorScheme * highlight Normal ctermbg=none
-autocmd ColorScheme * highlight LineNr ctermbg=none
+" autocmd ColorScheme * highlight Normal ctermbg=none
+" autocmd ColorScheme * highlight LineNr ctermbg=none
 set background=dark
 colorscheme gruvbox
 highlight LineNr ctermfg=239

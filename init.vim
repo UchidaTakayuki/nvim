@@ -148,8 +148,9 @@ let g:airline_theme='deus'
 " setting : vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=233
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=235
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
+let g:indent_guides_guide_size = 1
 
 " plugin setting : airline
 let g:airline#extensions#tabline#enabled = 1

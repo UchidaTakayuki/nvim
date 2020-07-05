@@ -139,7 +139,7 @@ syntax on
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
 autocmd ColorScheme * highlight Cursorline ctermbg=none
-" autocmd ColorScheme * highlight EndOfBuffer ctermbg=none
+autocmd ColorScheme * highlight EndOfBuffer ctermbg=none
 set background=dark
 colorscheme darktheme
 highlight LineNr ctermfg=239

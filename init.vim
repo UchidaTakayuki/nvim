@@ -106,6 +106,7 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('tpope/vim-repeat')
     call dein#add('tpope/vim-commentary')
     call dein#add('Shougo/neco-syntax')
+    call dein#add('kamykn/dark-theme.vim')
     call dein#add('vimlab/split-term.vim')
     call dein#add('digitaltoad/vim-pug')
     call dein#add('scrooloose/syntastic')
@@ -135,11 +136,12 @@ endif
 " setting : syntax
 " Notice : please write after the dein
 syntax on
-" autocmd ColorScheme * highlight Normal ctermbg=none
-" autocmd ColorScheme * highlight LineNr ctermbg=none
+autocmd ColorScheme * highlight Normal ctermbg=none
+autocmd ColorScheme * highlight LineNr ctermbg=none
 set background=dark
-colorscheme gruvbox
+colorscheme darktheme
 highlight LineNr ctermfg=239
+let g:airline_theme='deus'
 
 " plugin setting : airline
 let g:airline#extensions#tabline#enabled = 1

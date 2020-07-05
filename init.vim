@@ -111,8 +111,8 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('digitaltoad/vim-pug')
     call dein#add('scrooloose/syntastic')
     call dein#add('vim-scripts/grep.vim')
-    call dein#add('nathanaelkane/vim-indent-guides')
     call dein#add('rhysd/accelerated-jk')
+    call dein#add('Yggdroot/indentLine')
     call dein#add('simeji/winresizer')
     call dein#add('alvan/vim-closetag')
     call dein#add('prabirshrestha/async.vim')
@@ -182,10 +182,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ["flake8"]
-
-" pulugin setting : vim-indent-guides
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 
 " pulugin setting : accelerated-jk
 nmap j <Plug>(accelerated_jk_gj)

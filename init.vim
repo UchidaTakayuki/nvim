@@ -139,11 +139,17 @@ syntax on
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
 autocmd ColorScheme * highlight Cursorline ctermbg=none
-autocmd ColorScheme * highlight EndOfBuffer ctermbg=none
+" autocmd ColorScheme * highlight EndOfBuffer ctermbg=none
 set background=dark
 colorscheme darktheme
 highlight LineNr ctermfg=239
 let g:airline_theme='deus'
+
+" setting : vim-indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=233
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
 
 " plugin setting : airline
 let g:airline#extensions#tabline#enabled = 1

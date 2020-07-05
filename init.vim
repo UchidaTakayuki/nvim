@@ -170,9 +170,6 @@ let g:workspace_create_new_tabs = 1
 let g:workspace_session_directory = $HOME . '/.config/nvim/sessions/'
 cnoremap tcw :ToggleWorkspace<CR>
 
-" pulugin setting : indentLine
-let g:indentLine_char = '┆'
-
 " pulugin setting : syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}

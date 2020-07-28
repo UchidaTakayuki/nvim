@@ -41,7 +41,7 @@ set shiftround
 set autoindent
 
 " setting : mouse
-set mouse=a
+" set mouse=a
 
 " setting : window mode
 " nnoremap <C-h> <C-w>h
@@ -111,7 +111,7 @@ if dein#load_state('$HOME/.cache/dein')
     call dein#add('digitaltoad/vim-pug')
     call dein#add('scrooloose/syntastic')
     call dein#add('vim-scripts/grep.vim')
-    call dein#add('rhysd/accelerated-jk')
+    " call dein#add('rhysd/accelerated-jk')
     call dein#add('nathanaelkane/vim-indent-guides')
     call dein#add('simeji/winresizer')
     call dein#add('alvan/vim-closetag')

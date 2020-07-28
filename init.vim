@@ -188,8 +188,8 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ["flake8"]
 
 " pulugin setting : accelerated-jk
-nmap j <Plug>(accelerated_jk_gj)
-nmap k <Plug>(accelerated_jk_gk)
+" nmap j <Plug>(accelerated_jk_gj)
+" nmap k <Plug>(accelerated_jk_gk)
 
 " plugin setting : winresizer
 map <C-S-e> :WinResizerStartResize<CR>
